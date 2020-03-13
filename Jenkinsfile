@@ -81,5 +81,9 @@ pipeline {
             echo "Not AnyOf - Works!"
          }
       }
+	   stage ('test-downstream'){
+    if (env.BRANCH_NAME == 'master') {
+    build '../siu/master'
+    }
    }
 }
