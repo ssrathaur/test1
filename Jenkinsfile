@@ -83,9 +83,8 @@ pipeline {
       }
     stage ("test-downstream"){
 	    steps{
-    if (env.BRANCH_NAME == 'master') {
     build '../siu/master'
-    }}
+    }
    }
 }
 }
