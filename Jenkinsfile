@@ -83,7 +83,7 @@ pipeline {
       }
     stage ("test-downstream"){
 	    steps{
-    build 'ssrathaur/siu/Jenkinsfile'
+    build '../siu/Jenkinsfile'
     }
    }
 }
