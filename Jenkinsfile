@@ -81,10 +81,6 @@ pipeline {
             echo "Not AnyOf - Works!"
          }
       }
-    stage ("test-downstream"){
-	    steps{
-    build '../siu/Jenkinsfile'
-    }
-   }
+   
 }
 }
